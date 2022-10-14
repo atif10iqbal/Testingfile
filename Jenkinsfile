@@ -39,7 +39,6 @@ pipeline
             {
                 input message: 'Need Permission From Iqbal Bhai', submitter: 'iqbal'
                 deploy adapters: [tomcat9(credentialsId: 'ad57bcb9-8931-40f0-9a97-c6d228307ada', path: '', url: 'http://172.31.42.137:8080')], contextPath: 'app', war: '**/*.war'
-
             }
         }
     }
